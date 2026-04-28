@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>The Taste of WaterLily</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="lily.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+  <header>
+  
+	<div class="hero">
+     <img src="image/logo.jpg" alt="logo"></div>
+	 <h1><a href="index.html">The Taste of WaterLily</a></h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="AboutUs.html">About Us</a>
+	  <li><a href="menu.html">Menu</a>
+	  <ul>
+		<li><a href="reg.html">Regulars</a></li>
+		<li><a href="week.html">Weekly Specials</a></li>
+	  </ul>
+	  </li>
+	  
+      <li><a href="reservation.html">Reservation</a></li>
+      <li><a href="career.html">Careers</a></li>
+	  <li><a href="contact.html">Contact Us</a></li>
+	</ul>
+  </nav>
+ </header>
+ 
+  <main>
+ <section id="heroreserve">
+ <fieldset>
+      <h2>Reservations</h2>
+	  <p>Book your experience with us.</p>
+     <form action="form.php" method="post" enctype="text/plain">
+        <label for="myName">Name:</label>
+        <input type="text" id="myName" name="Name" required>
+
+        <label for="myEmail"> E-mail:</label>
+        <input type="email" id="myEmail" name="Email" required>
+
+        <label for="myPhone">Phone:</label>
+        <input type="tel" id="myPhone" name="Phone">
+
+        <label for="myDate">Arrival Date:</label>
+        <input type="date" id="myDate" name="Arrival_Date" required>
+		
+		 <label for="myTime">Arrival Time:</label>
+        <input type="time" id="myTime" name="Arrival_Time" required>
+
+        <label for="myPeople">Number of people:</label>
+        <input type="number" id="myPeoples" name="People" min="1" max="20" required>
+		
+		<label for="identity">Verify your Identity:</label>
+			<input type="text" id="identity" name="identity" list="identities">
+			<datalist id="identities">
+			<option value="Driver’s License" label="Driver’s License">
+			<option value="State ID" label="State ID">
+			<option value="Other" label="Other">
+		</datalist>
+		<input type="file" id="document" name="document" accept=".pdf,.doc,.docx,.txt" Required>
+
+        <input type="submit" value="Submit">
+        
+      </form>
+	  </fieldset>
+    </main>
+</section>
+	  
+</main>
+<footer>
+ &copy; 2026 The Taste of WaterLily All Rights Reserved<br>
+</footer>
+</div>
+</body>
+</html>

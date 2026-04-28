@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>The Taste of WaterLily</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="lily.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+  <header>
+  
+	<div class="hero">
+     <img src="image/logo.jpg" alt="logo"></div>
+	 <h1><a href="index.html">The Taste of WaterLily</a></h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="AboutUs.html">About Us</a>
+	  <li><a href="menu.html">Menu</a>
+	  <ul>
+		<li><a href="reg.html">Regulars</a></li>
+		<li><a href="week.html">Weekly Specials</a></li>
+	  </ul>
+	  </li>
+	  
+      <li><a href="reservation.html">Reservation</a></li>
+      <li><a href="career.html">Careers</a></li>
+	  <li><a href="contact.html">Contact Us</a></li>
+	</ul>
+  </nav>
+ </header>
+ 
+  <main>
+  
+ <section id="contact">
+ <h2>Our Location</h2>
+ <p>We have only one location at 1234 Michigan Ave, 61090. Contact us at<a href="tel:+18001234567">(800) 555-5555</a> or reachout to
+ <a href="mailto:TWL@01.net">TWL@01.net</a></p>
+ </section>
+ <h3>Share Your Experience</h3>
+<p>Your opinion matters! Help us improve by sharing your feedback</p> 
+ <fieldset>
+<form method="post" action="form.php" enctype="text/plain">
+	   
+	   <label for="myName"> Name:</label>
+	   <input type="text" id="myName" name="Name" required>
+	   
+	   <label for="myEmail"> E-mail:</label>
+	   <input type="email" id="uremail" name="uremail" required>
+	   
+	   <label for="myPhone">Phone:</label>
+        <input type="tel" id="myPhone" name="Phone" required>
+		
+	   <label for="myRating"> Rate your experience:</label> <br>
+	   <input type="range" id="myRating" name="myRating" min="1" max= "10" required>
+	   
+	 
+          
+          <label for="myList">Your Reason of Complain:</label>
+          <select id="myList" name="issues">
+            <option value="service">Poor Service</option>
+			<option value="quality">Food Quality</option>
+			<option value="rIssue">Reservation Issue</option>
+			<option value="ambiance">Ambiance</option>
+            <option value="Technical">Technical</option>
+            <option value="Other">Other</option>
+          </select><br>
+        
+	   
+	   <label for="others"> Please Explain Your Complain:</label>
+	   <textarea id="others" name="Other Comments" rows="4" cols="8" required></textarea>
+	   
+	   <input type="submit" id="mySubmit" value="Submit Feedback">
+	   </fieldset>
+	   </form> 
+	   
+
+	  
+</main>
+<footer>
+ &copy; 2026 The Taste of WaterLily All Rights Reserved<br>
+</footer>
+</div>
+</body>
+</html>

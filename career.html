@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>The Taste of WaterLily</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="lily.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+  <header>
+  
+	<div class="hero">
+     <img src="image/logo.jpg" alt="logo">
+	 <h1><a href="index.html">The Taste of WaterLily</a></h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="AboutUs.html">About Us</a></li>
+	  <li><a href="menu.html">Menu</a>
+		<ul>
+			<li><a href="reg">Regulars</a></li>
+			<li><a href="week">Weekly Specials</a></li>
+		</ul>
+	  </li>
+	  <li><a href="reservation.html">Reservation</a></li>
+      <li><a href="career.html">Careers</a></li>
+	  <li><a href="contact.html">Contact Us</a></li>
+	</ul>
+  </nav>
+ </header>
+ 
+ <main>
+ 
+ <h2>Be a Part of Our Team</h2>
+   <div id= "herojobs">
+     <img src="image/hiring.jpg" height="50%" width="100%" alt="Hiring"></div>
+	 
+	 <fieldset>
+	 <p>Fill out the form below to start your application.
+	 All information is required.</p>
+	 <form method="post" action="form.php" enctype="text/plain">
+	 <label for="myName">Name:</label>
+	 <input type="text" id="myName" name="myName" required>
+	 
+	  <label for="myEmail">E-mail:</label>
+	 <input type="email" id="myEmail" name="myEmail" required>
+	 
+	 <label for="myPhone">Phone:</label>
+        <input type="tel" id="myPhone" name="Phone" required>
+	 
+	  <label for="myDate">Start Date:</label>
+	 <input type="date" id="myDate" name="myDate" required>
+	 
+	 <label for="position">Position:</label>
+	 <input type="text" id="position" name="position" list="positions">
+	 <datalist id="positions">
+	 <option value="FOH" label="FOH">
+	 <option value="BOH" label="BOH">
+	 <option value="Manager" label="Manager">
+	 <option value="Chef" label="Chef">
+	 <option value="Other" label="Other">
+	 </datalist>
+	 
+	  <label for="myExperience">Experience:</label>
+	 <textarea type="text" id="myExperience" name="myExperience" rows="2" cols="20" required> </textarea>
+	 <input type="file" id="document" name="document" accept=".pdf,.doc,.docx,.txt" Required><br>
+	 
+	 <input type="submit" id="submit" value="Apply Now">
+	 </form>
+	 </fieldset>
+ </main>
+ <footer>
+ &copy; 2026 The Taste of WaterLily All Rights Reserved<br>
+</footer>
+</div>
+</body>
+</html>
