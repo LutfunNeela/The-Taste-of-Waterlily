@@ -56,7 +56,7 @@ header h1{font-size:30px;
 /*About Us WebPage Settings*/
 #heroUs{background-size:cover;
 		  background-repeat:no-repeat;
-		  height: 40vh;
+		  height: 20vh;
 		  width: 50%;
 		  display:block;
 		  margin:0 auto;
@@ -481,7 +481,7 @@ nav ul li a:hover{color:#C14600;
 	padding: 2em;
 }
 
-.hero1{height: 40vh;
+.hero1{height: 20vh;
           width:100%;
 		  margin: 0 auto;
 }
@@ -620,7 +620,7 @@ form{width:90%;
        gap:0;
 }
 
-.herojobs{height: 40vh;
+.herojobs{height: 20vh;
           width:100%;
 		  margin: 0 auto;
 }
@@ -640,7 +640,7 @@ form{width:90%;
 	   margin:0 auto;
 }
 
-.mrch img{flex-direction: row;
+.mrch img{flex-direction: column;
      margin:0 auto;
 	 padding:0 5px ;
 	 gap:0.5em;
