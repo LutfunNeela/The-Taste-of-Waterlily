@@ -3,19 +3,22 @@ body { background-color:#CBE2E3;
        color:#002A32;
 	   font-family: Tahoma, Arial, serif; 
 	   margin: 0 auto; 
-	   padding: 0;
-	   max-width: 1200px;
+	   padding: 0; 
+       max-width: 1200px;	   
+	   
 }
 #wrapper { background-color:#F6FAFA;
-			margin:0 auto;			
+			margin:0 auto;
+			
 			position:relative;
-			max-width:1200px;
+			width:100%;
+			
 }
 
 /*Header Settings*/
 header{background-color: #002A32;
 		display: flex;
-		justify-content: space-between;
+        flex-flow: row wrap; 
 		align-items: center;
 		margin-bottom: 30px;
 		letter-spacing:-.5px;
@@ -65,16 +68,17 @@ header h1{font-size:30px;
 		  background-image:url(image/food.jpg);
 		  display:block;
 		  justify-content:center;
-			margin-top:5px;
+		  margin-top:0;
 }	  
 
 
 /*Contact WebPages Settings*/
 .herojobs{background-image:url(image/hiring.jpg);
-	      background-size:100%;
+	      background-size:cover;
+		  background-position:center;
 		  background-repeat:no-repeat;
-		  height:18em;
-          width:auto;
+		  height:60vh;
+          width:100%;
 		  margin: 0 auto;
 		 
 } 
@@ -122,8 +126,10 @@ header h1{font-size:30px;
 		  height:30vh;
 		  width: 30vh;
 		  margin: 0 auto;
-		  float: left;
-		  margin-right:.5em;
+		  float: none;
+		  display:block;
+		  margin: 0 auto;
+		 
 }
  
 /*Menu WebPages Settings*/ 
@@ -214,14 +220,19 @@ nav a{text-decoration: none;
 	}
 	
 nav ul{display: flex;
-		justify-content:space-between;
+        flex-direction:row;
+        flex-wrap:wrap;
+		justify-content:center;
 		list-style:none;
-		gap: 30px;
+		gap: 10px;
+		padding:0;
 		padding-right:.5em;
 		padding-left: .5em;
 		}
 		
-nav ul li{position:relative;}	
+nav ul li{position:relative;
+          padding:5px;
+}	
 			
 nav ul li a{list-style-type: none;
 			display:block;
@@ -229,7 +240,7 @@ nav ul li a{list-style-type: none;
 }
 
 .small{ display:none;
-        flex-direction:column;
+        flex-direction:row;
 		position:absolute;
 		opacity:0;
 		visibility:hidden;
@@ -239,7 +250,7 @@ nav ul li a{list-style-type: none;
 		top: 100%;
 		left:0;
 		min-width:200px
-		}	
+}	
 
 nav ul li a:focus{background-color:#C14600;}
 
@@ -266,26 +277,23 @@ nav ul li:hover .small{display: flex;
 /*Main settings*/ 
  main{font-family: Arial, sans-serif;
 	  margin:auto;
-	  padding:0 4em;
+	  padding:0 1em;
 	  }
 	  
-main h2{justify-content:center;
+main h2{margin-bottom: 0;
 		   font-style: Bold;
 		   font-size:30px;
-		   letter-spacing:-2px;
+		   letter-spacing:-1.5px;
            color:#005363;	   
 }
 
-main h3{justify-content:center;
-		   font-style: Bold;
-		   font-size:20px;
-		   letter-spacing:-1px;
-           color:#005363;
-		   
+main h3{font-style: Bold;
+		font-size:20px;
+		letter-spacing:-1px;
+        color:#005363;		   
 }
 
-main p{justify-content:space-between;
-	   font-size:16px;
+main p{font-size:16px;
 	   letter-spacing:1px;	
 }	  
 
@@ -403,10 +411,80 @@ footer{background-color:#002A32;
 }	  
 
 /*Responsive WebPage Setting*/
-@media (max-width:800px){
+@media (max-width: 767px){
+body{margin:0 5px;}
+	
+#wrapper {margin: 0 5px;
+  }
+  
+ header{display:flex;
+        flex-direction: column;
+		 align-items:center;
+		 padding: 2px 0;
+		 gap:1px;
+}
+
+  h1 { font-size: .5em;
+       letter-spacing:.2em;
+	   margin: 0;
+	   text-align: center;
+}
+
+main{padding: 0 1em;}
+
+nav a{display:flex;
+	justify-content:center;
+	position:static;
+	color:#F6FAFA;
+	transition:.2s;
+} 
+
+nav ul{flex-direction:column;
+	   align-items:center;
+       max-height: 50%;
+	   gap: 2px;
+	   margin:.2px;
+	   padding:.2px;
+	   text-align: center;
+	   }
+
+nav ul li{margin:0;
+padding: 1px 2px;
+}	   
+.small{display:none;
+	   flex-direction:column;
+	   position:static;
+	   opacity:0;
+	   visibility:hidden;
+	   align-items:center;
+}		
+.small ul li{margin:0;
+			padding:0;
+			transition:0.2s ease;
+			opacity:1;
+			visibility:visible;	
+}	
+
+nav ul li:focus-within .small{display:flex;
+							  flex-direction:column;
+							  opacity:1;
+							  visibility:visible;
+							  color:#C14600;
+	
+}
+
+nav ul li a:hover{color:#C14600;
+	opacity:1;
+	margin:2px 4px;
+	padding: 2em;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
 body{margin:0 10px;}
 	
-.wrapper {margin: 0 10px;
+#wrapper {margin: 0 10px;
   }
   
  header{display:flex;
@@ -422,6 +500,8 @@ body{margin:0 10px;}
 	   text-align: center;
 }
 
+main{padding: 0 1em;}
+
 nav a{display:flex;
 	justify-content:center;
 	position:relative;
@@ -429,7 +509,7 @@ nav a{display:flex;
 	transition:.2s;
 } 
 
-nav ul{flex-direction:row;
+nav ul{flex-direction:column;
 	   align-items:center;
        max-height: 50%;
 	   gap: 5px;
@@ -441,9 +521,11 @@ nav ul{flex-direction:row;
 nav ul li{margin:0;
 padding: 5px 10px;
 }	   
-		
+.small ul li{display:flex;
+		 flex-flow:column nowrap;
+}	
 .small ul li a{
-	flex-direction: row;
+	flex-direction:column;
 	position:absolute;
 	text-align: center;
 	opacity:0;
@@ -455,9 +537,8 @@ padding: 5px 10px;
 
 nav ul a:hover{color:#C14600;
 	opacity:1;
-	margin:2px 4px;
-	padding-top: .5em;
-	padding-bottom: .5em;
+	margin:4px;
+	padding: 1.5em;
 }
 .small:focus{color:#C14600;
 			 background-color:rgba(255,255,255,0.15);
@@ -496,8 +577,14 @@ nav ul a:hover{color:#C14600;
 	 }
 	table{max-width:100%;
 		  max-height:auto;
+		  width:100%;
+		  margin:1em auto;
 		  margin:0 auto;
 	}
+
+form{width:90%;
+	 margin:0 auto;
+}
 
 .hero1{padding:0;
 	   padding-top:0;
@@ -505,19 +592,14 @@ nav ul a:hover{color:#C14600;
        gap:0;
 }
 
-h2{padding:0;
-   margin:0;
-   gap:0;
-}
-
-.herojobs{height: 5em;
-          width:auto;
+.herojobs{height: 40vh;
+          width:100vw;
 		  margin: 0 auto;
 }
 
 #contact h2{align-items:left;
-			margin-top:.5em;
-			margin-bottom: .5em;
+			margin:.5em 0;
+			padding:0;
 }
 
 #contact h3{padding:0;
@@ -538,4 +620,20 @@ h2{padding:0;
 	 justify-content:center;	
 }
 
+}
+
+@media(max-width: 1025px){
+body { margin: 0 auto; 
+	   padding: 0 10vw;
+	   max-width: 1200px;
+}
+#wrapper {	margin:0 auto;			
+			position:relative;
+			width:100%;
+			max-width:1200px;
+}	
+	
+.tablemenu{grid-template-columns: 2fr;}
+form{width:90%;
+	 margin:0 auto;
 }
