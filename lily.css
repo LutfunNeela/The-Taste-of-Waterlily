@@ -479,6 +479,13 @@ nav ul li a:hover{color:#C14600;
 	padding: 2em;
 }
 
+.tablemenu{grid-template-columns: 1fr;
+           position:static
+}
+form{width:90%;
+	 margin:0 auto;
+}
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
