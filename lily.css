@@ -481,6 +481,11 @@ nav ul li a:hover{color:#C14600;
 	padding: 2em;
 }
 
+.hero1{height: 40vh;
+          width:100%;
+		  margin: 0 auto;
+}
+
 .tablemenu{display:grid; 
 	grid-template-columns: 1fr;
 	width:100%;
