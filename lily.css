@@ -479,8 +479,10 @@ nav ul li a:hover{color:#C14600;
 	padding: 2em;
 }
 
+
 .tablemenu{grid-template-columns: 1fr;
-           position:static
+           position:static;
+		   align-items:center;
 }
 form{width:90%;
 	 margin:0 auto;
