@@ -54,15 +54,7 @@ header h1{font-size:30px;
 }	  
 
 /*About Us WebPage Settings*/
-#heroUs{background-size:cover;
-		  background-repeat:no-repeat;
-		  height: 10em;
-		  width: 50%;
-		  display:block;
-		  margin:0 auto;
-		  justify-content:space-between;
-		  align-items: center;
-}
+
 .hero1{background-size:100%;
 		  background-repeat:no-repeat;
 		  height: 10em;
