@@ -478,7 +478,8 @@ nav ul a:hover{color:#C14600;
 .hero { justify-content:center;
 		margin: 0 auto;		
 }	
-  
+
+ 
 	.tablemenu{grid-template-columns: 1fr;}
 	.img01{flex-direction: row;
      margin:0 auto;
@@ -493,8 +494,9 @@ nav ul a:hover{color:#C14600;
 		  padding:0 5vw ;
 		  width:100%;
 	 }
-	.images, table{max-width:100%;
-					max-height:auto;
+	table{max-width:100%;
+		  max-height:auto;
+		  margin:0 auto;
 	}
 
 .hero1{padding:0;
