@@ -54,24 +54,17 @@ header h1{font-size:30px;
 }	  
 
 /*About Us WebPage Settings*/
-#heroUs{background-size:cover;
-		  background-repeat:no-repeat;
-		  height: 20vh;
-		  width: 50%;
-		  display:block;
-		  margin:0 auto;
-		  justify-content:space-between;
-		  align-items: center;
-}
 .hero1{background-size:100%;
 		  background-repeat:no-repeat;
-		  height: 10em;
+		  height: 10vh;
 		  width: 100%;
 		  background-image:url(image/food.jpg);
-		  display:block;
+		  display:flex;
 		  justify-content:center;
 		  margin-top:0;
-}	  
+	      margin-bottom:0;	      
+}	
+
 
 
 /*Contact WebPages Settings*/
@@ -81,8 +74,7 @@ header h1{font-size:30px;
 		  background-repeat:no-repeat;
 		  height:60vh;
           width:100%;
-		  margin: 0 auto;
-		 
+		  margin: 0 auto;		 
 } 
 
 #contact h2{align-items:left;
