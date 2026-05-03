@@ -483,11 +483,16 @@ nav ul li a:hover{color:#C14600;
 .tablemenu{grid-template-columns: 1fr;
            position:static;
 		   align-items:center;
+		   margin:0;
+		   padding:0;
+		   gap:.2px;
 }
-form{width:90%;
+fieldset{background-size:cover;
+		align-items:center;
+}
+form{width:50%;
 	 margin:0 auto;
 }
-
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
