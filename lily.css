@@ -415,11 +415,11 @@ body{margin:0;}
         margin-bottom:0;
         flex-direction: column;
 		 align-items:center;
-		 padding: 2px 0;
-		 gap:1px;
+		 padding:0;
+		 gap:0;
 }
 
-  h1 { font-size: .5em;
+ h1 { font-size: .5em;
        letter-spacing:.2em;
 	   margin: 0;
 	   text-align: center;
@@ -675,8 +675,11 @@ nav ul{justify-content: flex-end;
 }
 	
 .tablemenu{display:grid; 
-	width:100%;
-	max-width:100%;}
+		   grid-template-columns:repeat(2, 1fr);
+	       width:100%;
+		   max-width:100%;
+}  
+
 form{width:90%;
 	 margin:0 auto;
 }
