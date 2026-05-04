@@ -128,7 +128,7 @@ header h1{font-size:30px;
 		  height:30vh;
 		  width: 30vh;
 		  margin: 0 auto;
-		  float: left;
+		  float: none;
 		  display:block;
 		  margin: 0 auto;
 		 
@@ -671,4 +671,7 @@ body { margin: 0 auto;
 	max-width:100%;}
 form{width:90%;
 	 margin:0 auto;
+}
+
+.mrch img{float:left;}
 }
