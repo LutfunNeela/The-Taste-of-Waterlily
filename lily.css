@@ -54,17 +54,24 @@ header h1{font-size:30px;
 }	  
 
 /*About Us WebPage Settings*/
+#heroUs{background-size:cover;
+		  background-repeat:no-repeat;
+		  height: 40vh;
+		  width: 50%;
+		  display:block;
+		  margin:0 auto;
+		  justify-content:space-between;
+		  align-items: center;
+}
 .hero1{background-size:100%;
 		  background-repeat:no-repeat;
-		  height: 10vh;
+		  height: 10em;
 		  width: 100%;
 		  background-image:url(image/food.jpg);
-		  display:flex;
+		  display:block;
 		  justify-content:center;
 		  margin-top:0;
-	      margin-bottom:0;	      
-}	
-
+}	  
 
 
 /*Contact WebPages Settings*/
@@ -74,7 +81,8 @@ header h1{font-size:30px;
 		  background-repeat:no-repeat;
 		  height:60vh;
           width:100%;
-		  margin: 0 auto;		 
+		  margin: 0 auto;
+		 
 } 
 
 #contact h2{align-items:left;
@@ -120,7 +128,7 @@ header h1{font-size:30px;
 		  height:30vh;
 		  width: 30vh;
 		  margin: 0 auto;
-		  float: none;
+		  float: left;
 		  display:block;
 		  margin: 0 auto;
 		 
@@ -473,7 +481,7 @@ nav ul li a:hover{color:#C14600;
 	padding: 2em;
 }
 
-.hero1{height: 20vh;
+.hero1{height: 40vh;
           width:100%;
 		  margin: 0 auto;
 }
@@ -494,8 +502,8 @@ form{width:90%;
 }
 
 main h2{margin: 0 0 1em;
-	    padding: 0;
-}	
+	    padding: 0 0;
+}
 
 }
 
@@ -616,7 +624,7 @@ form{width:90%;
        gap:0;
 }
 
-.herojobs{height: 20vh;
+.herojobs{height: 40vh;
           width:100%;
 		  margin: 0 auto;
 }
@@ -636,7 +644,7 @@ form{width:90%;
 	   margin:0 auto;
 }
 
-.mrch img{flex-direction: column;
+.mrch img{flex-direction: row;
      margin:0 auto;
 	 padding:0 5px ;
 	 gap:0.5em;
