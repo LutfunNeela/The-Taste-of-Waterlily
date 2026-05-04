@@ -545,6 +545,7 @@ padding: 5px 10px;
 }	
 .small ul li a{
 	flex-direction:column;
+	justify-content:center;
 	position:absolute;
 	text-align: center;
 	opacity:0;
@@ -581,7 +582,7 @@ nav ul a:hover{color:#C14600;
 
  
 	.tablemenu{display:grid; 
-	grid-template-columns: 1fr;
+	grid-template-columns: 2fr;
 	width:100%;
 	max-width:100%;
 	}
