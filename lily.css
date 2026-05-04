@@ -109,18 +109,16 @@ header h1{font-size:30px;
 }
 
 .mrch h3{display:flex;
-           flex-direction:row;
+           flex-direction:column;
 			margin: 0 auto;
 			padding-bottom:.5em;
-			justify-content:center;
-			
+			text-align:center;
 	
 }
 
 .mrch p{display:flex;
-           flex-direction:row;
+           flex-direction:column;
 			margin: 0 auto;
-			justify-content:center;
 			text-align:center;
 			padding-bottom:.5em;
 }
@@ -484,8 +482,8 @@ nav ul li a:hover{color:#C14600;
 }
 
 .hero1{height: 40vh;
-       width:100%;
-	   margin: 0 auto;
+          width:100%;
+		  margin: 0 auto;
 }
 
 .tablemenu{display:grid; 
@@ -506,7 +504,6 @@ form{width:90%;
 main h2{margin: 0 0 1em;
 	    padding: 0 0;
 }
-
 
 }
 
@@ -532,7 +529,7 @@ body{margin:0 10px;}
 main{padding: 0 1em;}
 
 nav a{display:flex;
-	justify-content:center;
+	justify-content:space-between;
 	position:relative;
 	color:#F6FAFA;
 	transition:.2s;
@@ -642,19 +639,22 @@ form{width:90%;
 			
 }
 
-.mrch img{
-		  background-repeat:no-repeat;
-		  height:30vh;
-		  width: 30vh;
-		  margin: 0 auto;
-		  float: left;
-		  display:block;
-		  margin: 0 auto;		 
+.mrch{display: grid;
+	  grid-template-columns: 1fr;
+	   margin:0 auto;
+}
+
+.mrch img{flex-direction: row;
+     margin:0 auto;
+	 padding:0 5px ;
+	 gap:0.5em;
+	 width:60%;
+	 justify-content:center;	
 }
 
 }
 
-@media(max-width: 1025px){
+@media(min-width: 1025px){
 body { margin: 0 auto; 
 	   padding: 0 10px;
 	   max-width: 1200px;
@@ -664,6 +664,14 @@ body { margin: 0 auto;
 			width:100%;
 			max-width:1200px;
 }	
+header{justify-content: space-between;
+}
+
+nav{margin-left:auto;}
+
+nav ul{justify-content: flex-end;
+	   padding-right:2em;
+}
 	
 .tablemenu{display:grid; 
 	grid-template-columns: 2fr;
@@ -672,15 +680,3 @@ body { margin: 0 auto;
 form{width:90%;
 	 margin:0 auto;
 }
-
-.mrch img{
-		  background-repeat:no-repeat;
-		  height:30vh;
-		  width: 30vh;
-		  margin: 0 auto;
-		  float: left;
-		  display:block;
-		  margin: 0 auto;		 
-}
-}
-
