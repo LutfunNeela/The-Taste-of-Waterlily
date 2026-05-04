@@ -109,16 +109,18 @@ header h1{font-size:30px;
 }
 
 .mrch h3{display:flex;
-           flex-direction:column;
+           flex-direction:row;
 			margin: 0 auto;
 			padding-bottom:.5em;
-			text-align:center;
+			justify-content:center;
+			
 	
 }
 
 .mrch p{display:flex;
-           flex-direction:column;
+           flex-direction:row;
 			margin: 0 auto;
+			justify-content:center;
 			text-align:center;
 			padding-bottom:.5em;
 }
@@ -482,8 +484,8 @@ nav ul li a:hover{color:#C14600;
 }
 
 .hero1{height: 40vh;
-          width:100%;
-		  margin: 0 auto;
+       width:100%;
+	   margin: 0 auto;
 }
 
 .tablemenu{display:grid; 
@@ -504,6 +506,7 @@ form{width:90%;
 main h2{margin: 0 0 1em;
 	    padding: 0 0;
 }
+
 
 }
 
@@ -639,17 +642,14 @@ form{width:90%;
 			
 }
 
-.mrch{display: grid;
-	  grid-template-columns: 1fr;
-	   margin:0 auto;
-}
-
-.mrch img{flex-direction: row;
-     margin:0 auto;
-	 padding:0 5px ;
-	 gap:0.5em;
-	 width:60%;
-	 justify-content:center;	
+.mrch img{
+		  background-repeat:no-repeat;
+		  height:30vh;
+		  width: 30vh;
+		  margin: 0 auto;
+		  float: left;
+		  display:block;
+		  margin: 0 auto;		 
 }
 
 }
@@ -673,5 +673,14 @@ form{width:90%;
 	 margin:0 auto;
 }
 
-.mrch img{float:left;}
+.mrch img{
+		  background-repeat:no-repeat;
+		  height:30vh;
+		  width: 30vh;
+		  margin: 0 auto;
+		  float: left;
+		  display:block;
+		  margin: 0 auto;		 
 }
+}
+
