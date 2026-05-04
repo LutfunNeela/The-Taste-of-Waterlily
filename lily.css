@@ -493,8 +493,9 @@ form{width:90%;
 	 margin:0 auto;
 }
 
-main h2{margin: 0 0 1em;
+#Us h2{margin: 0 0 1em;
 	    padding:0;
+		gap:0;
 }
 
 }
