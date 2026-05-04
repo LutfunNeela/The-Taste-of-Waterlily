@@ -585,7 +585,6 @@ nav ul a:hover{color:#C14600;
 
  
 	.tablemenu{display:grid; 
-	grid-template-columns: 2fr;
 	width:100%;
 	max-width:100%;
 	}
